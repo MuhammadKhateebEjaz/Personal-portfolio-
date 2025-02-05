@@ -1,266 +1,93 @@
-        /* Global Body Styling */
+/* Desktop View (Large Screens) */
+@media (min-width: 768px) {
+    header, footer {
+      text-align: left;
+      padding: 1rem 2rem;
+    }
+  
+    nav ul {
+      justify-content: flex-start;
+    }
+  
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+  
+  /* Tablet View (Medium Screens) */
+  @media (min-width: 481px) and (max-width: 767px) {
+    nav ul {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+  
+  /* Mobile View (Small Screens) */
+@media (max-width: 480px) {
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center-aligns items */
+      gap: 0.5rem;
+      padding: 0; /* Removes default padding */
+      margin: 0; /* Removes default margin */
+      list-style: none; /* Removes bullet points */
+  }
+
+  nav ul li a {
+      font-size: 1rem; /* Adjusts text size */
+      text-decoration: none; /* Removes underline from links */
+      padding: 10px; /* Adds padding for better clickability */
+      color: #333; /* Default link color */
+      transition: color 0.3s ease; /* Smooth hover transition */
+  }
+
+  nav ul li a:hover {
+      color: #007BFF; /* Highlight color on hover */
+  }
+}
+
+
+
+
+
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-image: url(ALL_Image/SOCIAL\ ICON\ 4.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
-
-
-
-
-
-        /* Header Styles */
         h1, h2, h3 {
-            text-align: center;
-            margin-top: 20px;
-            color: #333;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
-        }
-
-        p {
-            text-align: center;
-            font-size: 1rem;
-            color: #555;
-        }
-
-
-
-
-
-        /* Table Styling */
-        table {
-            width: 100%;
-            background-color: yellow;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th {
-            width: 255px;
-            text-align: center;
-            background-color: #333;
-            color: white;
+            margin: 0;
             padding: 10px;
         }
 
-        th a {
-            color: white;
+        nav {
+            background-color: white;
+            border: 5px solid blue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
             text-decoration: none;
-            font-size: 1rem;
+            color: blue;
             font-weight: bold;
         }
 
-        th a:hover {
-            color: #00ffcc;
+        nav a:hover {
+            color: darkblue;
         }
-
-
-
-
-        /* Footer Styling */
-        footer {
-            background-color: #2a08e7;
-            color: rgb(68, 17, 252);
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-
-
-
     
-        /* Hover effect for table rows */
-table tr:hover {
-    background-color: #0539e2;
-    cursor: pointer;
-}
 
 
 
 
-
-/* Desktop View */
-@media (min-width: 768px) {
-  header, footer {
-    text-align: left;
-    padding: 1rem 2rem;
-  }
-
-  nav ul {
-    justify-content: flex-start;
-  }
-
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-  }
-}
-
-
-
-/* Mobile View */
-@media (max-width: 767px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-
-
-/* Smooth transition for buttons */
-.btn-hire, .btn-contact {
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-hire:hover, .btn-contact:hover {
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
-}
-footer {
-    padding: 20px;
-    background-color: /* Global Body Styling */
-
-
-/* Header Styles */
-h1, h2, h3 {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-p {
-    text-align: center;
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Table Styling */
-table {
-    width: 100%;
-    background-color: #fff;
-    border-collapse: collapse;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-th {
-    width: 255px;
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-th a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-th a:hover {
-    color: #d8e0df;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #220aa8;
-    color: rgb(208, 202, 228);
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 0 10px rgba(185, 157, 157, 0.1);
-}
-
-/* Hover effect for table rows */
-table tr:hover {
-    background-color: #0e31a1;
-    cursor: pointer;
-}
-
-/* Desktop View */
-@media (min-width: 768px) {
-  header, footer {
-    text-align: left;
-    padding: 1rem 2rem;
-  }
-
-  nav ul {
-    justify-content: flex-start;
-  }
-
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-  }
-}
-
-/* Mobile View */
-@media (max-width: 767px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-/* Smooth transition for buttons */
-.btn-hire, .btn-contact {
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-hire:hover, .btn-contact:hover {
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
-}
-footer {
-    padding: 20px;
-    background-color: rgba(42, 49, 153, 0.87);
-    font-size: 1rem;
-}
-
-footer p {
-    margin: 0;
-}3, 211, 0.87);
-    font-size: 1rem;
-}
-
-footer p {
-    margin: 0;
-}
+        
