@@ -1,79 +1,93 @@
-/* Desktop View */
+/* Desktop View (Large Screens) */
 @media (min-width: 768px) {
-    header, footer {
-      text-align: left;
-      padding: 1rem 2rem;
-    }
-  
-    nav ul {
-      justify-content: flex-start;
-    }
-  
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: left;
-    }
-  }
-  
-  /* Mobile View */
-  @media (max-width: 767px) {
-    nav ul {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
+  header, footer {
+    text-align: left;
+    padding: 1rem 2rem;
   }
 
-  <!-- Inline Styling -->
-  
+  nav ul {
+    justify-content: flex-start;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+
+/* Tablet View (Medium Screens) */
+@media (min-width: 481px) and (max-width: 767px) {
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+/* Mobile View (Small Screens) */
+@media (max-width: 480px) {
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns items */
+    gap: 0.5rem;
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    list-style: none; /* Removes bullet points */
+}
+
+nav ul li a {
+    font-size: 1rem; /* Adjusts text size */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px; /* Adds padding for better clickability */
+    color: #333; /* Default link color */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Highlight color on hover */
+}
+}
+
+
+
+
 
 
       body {
-          background-image: url('ALL Image.html/SOCIAL ICON 4.jpg');
-          height: 100vh;
+          background-image: url(Public_image/SOCIAL ICON 4.jpg);
           background-size: cover;
           background-position: center;
-      
-      }
- 
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="SocialMedia Page style.css">
-
-  <!-- Inline Styling -->
-
-      .body {
-          background-image: url('ALL Image.html/SOCIAL ICON 4.jpg');
           height: 100vh;
-          background-size: cover;
-          background-position: center;
+          margin: 0;
           font-family: Arial, sans-serif;
       }
-      
+
       h1, h2, h3 {
-          color: #fff;
-          text-shadow: 2px 2px 4px #000;
-      }
-      
-      table {
-          border-collapse: collapse;
-          width: 100%;
-      }
-      
-      th {
+          margin: 0;
           padding: 10px;
-          text-align: left;
-          border-bottom: 1px solid #ddd;
       }
-      
-      a {
+
+      nav {
+          background-color: white;
+          border: 5px solid blue;
+          padding: 10px;
+          text-align: center;
+      }
+
+      nav a {
+          margin: 10px;
           text-decoration: none;
-          color: #337ab7;
+          color: blue;
+          font-weight: bold;
       }
+
+      nav a:hover {
+          color: darkblue;
+      }
+  
+
+
+
+
       
-      a:hover {
-          color: #23527c;
-      }
-
-
-
